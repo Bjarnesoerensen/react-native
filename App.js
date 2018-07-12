@@ -40,7 +40,7 @@ export default class App extends React.Component {
       let data = this.state.dataSource.map((val, key) =>{
         return  <View key={key} style={styles.item}>
         
-                  <Text style={{fontSize:25}}>{val.title}</Text>
+                  <Text style={{fontSize:25, color: 'red'}}>{val.title}</Text>
                   <Text style={{fontSize:20}}>{val.text}</Text>
                   <Text style={{fontSize:15}}>{val.uuid}</Text>
                 </View>
@@ -49,7 +49,7 @@ export default class App extends React.Component {
       return (
         
         <ScrollView>
-        <Text style={{fontSize:30}}>Fetching my little API</Text>
+        <Text style={{alignSelf: 'center', fontSize:30, paddingTop:30, color: 'red'}}>Fetching my little API</Text>
         {data}
         </ScrollView>
       );
